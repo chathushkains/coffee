@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { BedrockRuntimeClient, InvokeModelCommand } from '@aws-sdk/client-bedrock-runtime'
 import { fromEnv } from '@aws-sdk/credential-providers'
+import { CoffeeResponse } from '@/types/coffee'
 
 export async function POST(request: NextRequest) {
   try {
